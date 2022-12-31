@@ -5,11 +5,32 @@
     <title> LISTA LUCHO</title>
   </head>
   <body>
-<% if (diax === sabado){ %>
-      <h1 style="color:blue">hoy es dia <%= mostrar %></h1>
-<%   } else {%>
-      <h1 style="color:red">hoy es dia <%= mostrar %></h1>
-  <%  } %>
+
+
+<h1> <%=mostrar %></h1>
+
+<ul>
+  <li>
+    hola
+  </li>
+<li>
+  nuevo
+</li>
+<li>
+  hx
+</li>
+<% for(var i=0 ; i<tarea1.length; i++){ %>
+
+</tarea1.length;>
+  <li> tarea1[i] </li>
+<% } %> //mefalta aprender esto
+</ul>
+
+<form class="" action="/" method="post">
+  <input type="text" name="tarea"  required>
+  <button type="submit" name="button" >Agregar Tarea</button>
+</form>
+<%
 
 
 
