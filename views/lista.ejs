@@ -3,35 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title> LISTA LUCHO</title>
+    <link rel="stylesheet" href="css\styles.css">
   </head>
   <body>
+    <%- include("header")-%>
 
+    <div class"box" id="heading">
+      <h1> <%=mostrar %></h1>
 
-<h1> <%=mostrar %></h1>
+</div>
 
-<ul>
-  <li>
-    hola
-  </li>
-<li>
-  nuevo
+<div class="box">
+
 </li>
-<li>
-  hx
-</li>
-<% for(var i=0 ; i<tarea1.length; i++){ %>
 
-</tarea1.length;>
-  <li> tarea1[i] </li>
-<% } %> //mefalta aprender esto
+<% for (var i=0 ; i<tarea1.length; i++) { %>
+  <li> <%= tarea1[i] %> </li>
+  <input type="checkbox">
+<% } %>
 </ul>
-
-<form class="" action="/" method="post">
-  <input type="text" name="tarea"  required>
-  <button type="submit" name="button" >Agregar Tarea</button>
+<form class="item" action="/" method="post">
+  <input type="text" name="tarea"  required placeholder="nuevo item">
+  <button type="submit" name="listax" value= "<%= mostrar %>" </button>+</button>
 </form>
-<%
-
+</div>
+<%- include("footer")-%>
 
 
 
